@@ -1,5 +1,5 @@
 # Simulador-Maquina-de-Turing
-## ⚙️ Tabla de Transiciones de la Máquina de Turing (Regex: `^\w{8,}$`)
+## Tabla de Transiciones de la Máquina de Turing (Regex: `^\w{8,}$`)
 
 Esta tabla define la función de transición $\delta(q_{\text{actual}}, S_{\text{leído}}) \to (q_{\text{nuevo}}, S_{\text{escrito}}, D_{\text{movimiento}})$ para reconocer una cadena de 8 o más "caracteres de palabra" (letras, dígitos o guion bajo).
 
@@ -20,9 +20,11 @@ Esta tabla define la función de transición $\delta(q_{\text{actual}}, S_{\text
 
 ***
 
-### 🔑 Leyenda de Símbolos Actualizada
+### Leyenda de Símbolos
 
 * **$\mathbf{W}$**: Representa cualquier **carácter de palabra** (letras $a-z, A-Z$, dígitos $0-9$ o guion bajo **`_`**).
 * **$\mathbf{B}$**: El símbolo en **Blanco** de la cinta.
-* **$R$**: Movimiento a la **Derecha** (Right).
-* **$S$**: **Detener** (Stop/Stay) la máquina.
+
+## Diagrama de Transiciones
+  <img width="1038" height="394" alt="image" src="https://github.com/user-attachments/assets/b7bb6105-c4bb-4830-b7e2-2579f8b6c03e" />
+
