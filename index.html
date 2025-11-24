@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Máquina de Turing</title>
+    
+</head>
+<script src="script.js"></script>
+<body>
+    <div class="container">
+        <button onclick="run()" id="B-run">Run</button>
+        <button onclick="step()" id="B-step">Step</button>
+        <button id="B-stop" onclick="stop()">Stop</button>
+        <button id="B-reiniciar" onclick="reiniciar()">Reiniciar</button>
+    </div>
+
+    <div class="container">
+        <label for="input" >Input:</label>
+        <input id="cadena" type="text">
+    </div>
+
+    <p id="step"></p>
+ <div id="cinta" class="container">
+    <div id="cabezal">
+
+    </div>
+
+    <div id="cuadro-lista">
+        <p id="caracter"> </p>
+    </div>
+ </div>
+
+ <div id="output">
+    <label for="">Output:</label>
+    <p id="output-text"></p>
+    <p id="validez"></p>
+    <label for="">Current state:</label>
+    <p id="state"> </p>
+ </div>
+
+    
+
+</body>
+</html>

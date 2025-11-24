@@ -1,0 +1,35 @@
+:root{
+    --margen:20px;
+}
+.container{
+    margin: var(--margen);
+}
+#output{
+    display: block;
+    margin-top: 170px;
+    margin-left: var(--margen);
+}
+
+#cabezal{
+    padding: 50px;
+    border: 10px solid black;
+    position: absolute;
+    top:cal(var(--margen)+20px);
+    left: var(--margen);
+    z-index: 10;
+
+}
+#cuadro-lista{
+    padding: 60px;
+    background-color: lightgray;
+    position: absolute;
+    top:cal(var(--margen)+20px);
+    left: var(--margen);
+    border: 1px solid black;
+}
+#caracter{
+    position: absolute;
+    top:10%;
+    left:43%;
+    font-size: 30px;
+}
