@@ -1,17 +1,17 @@
 :root{
-    --margen:20px;
+    --margen:40px;
 }
 .container{
     margin: var(--margen);
 }
 #output{
     display: block;
-    margin-top: 170px;
+    margin-top: 210px;
     margin-left: var(--margen);
 }
 
 #cabezal{
-    padding: 50px;
+    padding: 55px;
     border: 10px solid black;
     position: absolute;
     top:cal(var(--margen)+20px);
@@ -29,7 +29,31 @@
 }
 #caracter{
     position: absolute;
-    top:10%;
-    left:43%;
     font-size: 30px;
+}
+
+#output-text{
+    display: inline;
+}
+ #state{
+    display: inline;
+ }
+ #step{
+    margin: 30px;
+    font-size: 30px;
+ }
+ #validez{
+    font-size: 30px;
+ }
+ .flecha-arriba {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid black;
+  position: absolute;
+  top: 410px;
+  left: 80px
+}
+#cuadro-cabezal{
 }

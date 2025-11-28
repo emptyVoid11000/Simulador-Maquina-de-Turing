@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css">
     <title>Máquina de Turing</title>
     
@@ -10,34 +15,39 @@
 <script src="script.js"></script>
 <body>
     <div class="container">
-        <button onclick="run()" id="B-run">Run</button>
-        <button onclick="step()" id="B-step">Step</button>
-        <button id="B-stop" onclick="stop()">Stop</button>
-        <button id="B-reiniciar" onclick="reiniciar()">Reiniciar</button>
+        <button class="btn btn-success" onclick="run()" id="B-run" >Run</button>
+        <button class="btn btn-outline-success" onclick="step()" id="B-step">Step</button>
+        <button class="btn btn-danger" id="B-stop" onclick="stop()">Stop</button>
+        <button class="btn btn-secondary" id="B-reiniciar" onclick="reiniciar()">Reiniciar</button>
     </div>
 
-    <div class="container">
-        <label for="input" >Input:</label>
-        <input id="cadena" type="text">
+    <div class="container input-group">
+        <span class="input-group-text" id="basic-addon3">Input:</span>
+        <input class="form-control" aria-describedby="basic-addon3 basic-addon4" id="cadena" type="text">
     </div>
 
-    <p id="step"></p>
+    <p id="step">Step 0</p>
  <div id="cinta" class="container">
-    <div id="cabezal">
-
+    <div id="cuadro-cabezal">
+        <div id="cabezal">
+       
+        </div>
+        <div id="flecha-arriba" class="flecha-arriba"></div>
     </div>
+    
 
     <div id="cuadro-lista">
-        <p id="caracter"> </p>
+        <p id="caracter">/0</p>
     </div>
  </div>
 
  <div id="output">
     <label for="">Output:</label>
     <p id="output-text"></p>
-    <p id="validez"></p>
+    <hr>
     <label for="">Current state:</label>
     <p id="state"> </p>
+    <p class="text-success" id="validez"></p>
  </div>
 
     
